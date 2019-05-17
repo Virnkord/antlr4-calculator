@@ -1,0 +1,15 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calc.js",
+  "scripts": {
+    "gen": "java -Xmx500M -cp '/usr/local/lib/antlr-4.7.1-complete.jar:$CLASSPATH' org.antlr.v4.Tool  -Dlanguage=JavaScript -lib grammars -o lib -visitor -Xexact-output-dir grammars/Calculator.g4",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Mikhailov",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.7.2"
+  }
+}
